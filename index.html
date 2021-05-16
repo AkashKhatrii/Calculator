@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+      
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+
+    
+    </style>
+</head>
+<body>
+
+    <button onclick="changeMode()" class="mode" id="mode">Dark Mode</button>
+    <div class="container" id="container">
+        <div class="display" id="display">
+            <h1 id="text"></h1>
+        </div>
+        <div class="grid-4">
+            <button onclick = "myFunc('c')" class="btn" id="c">C</button>
+            <button onclick = "myFunc('ce')" class="btn" id="ce">CE</button>
+            <button onclick = "myFunc('%')" class="btn" id="mod">%</button>
+            <button onclick = "myFunc('x')" class="btn-op" id="mul">x</button>
+            <button onclick = "myFunc('7')" class="btn" id="i7">7</button>
+            <button onclick = "myFunc('8')" class="btn" id="i8">8</button>
+            <button onclick = "myFunc(9)" class="btn" id="i9">9</button>
+            <button onclick = "myFunc('/')" class="btn-op" id="div">/</button>
+            <button onclick = "myFunc(4)" class="btn" id="i4">4</button>
+            <button onclick = "myFunc(5)" class="btn" id="i5">5</button>
+            <button onclick = "myFunc(6)" class="btn" id="i6">6</button>
+            <button onclick = "myFunc('-')" class="btn-op" id="sub">-</button>
+            <button onclick = "myFunc(1)" class="btn" id="i1">1</button>
+            <button onclick = "myFunc(2)" class="btn" id="i2">2</button>
+            <button onclick = "myFunc(3)" class="btn" id="i3">3</button>
+            <button onclick = "myFunc('+')" class="btn-op" id="add">+</button>
+            
+
+        </div>
+        <div class="buttons grid-4">
+            <button onclick = "myFunc(0)" class="btn" id="i0">0</button>
+            <button onclick = "myFunc('=')" class="btn-op" id="equals">=</button>
+        </div>
+
+    </div>
+
+    <script src = "calc.js">
+    </script>
+</body>
+</html>
