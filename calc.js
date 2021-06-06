@@ -38,6 +38,18 @@ function myFunc(x){
             document.getElementById("text").innerHTML = displaytext;
         }
 
+        else if (x == 'ce')
+        {
+            console.log(displaytext)
+            if (displaytext.length!= 0) {
+                displaytext = displaytext.substring(0, displaytext.length-1)
+                value = value.substring(0, value.length-1)
+            }
+            document.getElementById("text").innerHTML = displaytext;
+            console.log(displaytext)
+
+        }
+
         else if (x == '='){
             value = eval(value);
             document.getElementById("text").innerHTML = value;
@@ -84,15 +96,26 @@ function myFunc(x){
                 add.style.backgroundColor = "#FF9500"
                 sub.style.backgroundColor = "#FF9500"
                 equal.style.backgroundColor = "#FF9500"
+                
+                mul.style.color = "white"
+                div.style.color = "white"
+                add.style.color = "white"
+                sub.style.color = "white"
+                equal.style.color = "white"
                 var i;
                 for(i = 0; i < btns.length;i ++)
                 {
                     btns[i].style.backgroundColor = "#505050"
+                    btns[i].style.color = "white"
                 }
 
                 c.style.backgroundColor = "#D4D4D2"
                 ce.style.backgroundColor = "#D4D4D2"
                 mod.style.backgroundColor = "#D4D4D2"
+
+                c.style.color = "black"
+                ce.style.color = "black"
+                mod.style.color = "black"
                 
             }
 
@@ -108,6 +131,7 @@ function myFunc(x){
                 for(i = 0; i < btns.length;i ++)
                 {
                     btns[i].style.backgroundColor = "white"
+                    btns[i].style.color = "black"
                 }
 
                 var j;
@@ -121,6 +145,12 @@ function myFunc(x){
                 add.style.backgroundColor = "white"
                 sub.style.backgroundColor = "white"
                 equal.style.backgroundColor = "white"
+
+                mul.style.color = "black"
+                div.style.color = "black"
+                add.style.color = "black"
+                sub.style.color = "black"
+                equal.style.color = "black"
 
 
                 
